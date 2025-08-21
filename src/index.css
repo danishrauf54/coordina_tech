@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --container: 1200px; }
+
+.container-xl { @apply max-w-7xl mx-auto px-5 md:px-8; }
+.section { @apply w-full py-16 md:py-24; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold shadow-soft transition hover:-translate-y-[1px] hover:shadow-lg; }
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
+.btn-outline { @apply border border-slate-300 text-slate-700 hover:bg-slate-50; }
+.card { @apply rounded-2xl bg-white p-6 shadow-soft; }
+.badge { @apply inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-700; }
+.glass { @apply bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70; }
+.nav-link { @apply text-sm font-medium text-slate-700 hover:text-slate-900; }
